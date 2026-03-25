@@ -13,10 +13,15 @@ export default function Home() {
         {/* Profile Header */}
         <div className="flex flex-col items-center text-center space-y-4">
           <div className="relative w-28 h-28 rounded-full overflow-hidden border-4 border-white shadow-lg">
-            {/* Placeholder Image */}
-            <div className="w-full h-full bg-slate-200 flex items-center justify-center text-slate-400">
-              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-            </div>
+            {/* Profile Image */}
+            <Image
+              src="/profile.png"
+              alt="Abhishek Singh"
+              width={112}
+              height={112}
+              className="object-cover object-top w-full h-full"
+              priority
+            />
           </div>
           <div>
             <h1 className="text-2xl font-bold tracking-tight text-slate-900">
