@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { QuickLinkButton } from "@/components/QuickLinkButton";
 import { Phone, MessageCircle, Globe, Mail } from "lucide-react";
 
@@ -12,17 +11,6 @@ export default function Home() {
       <div className="w-full max-w-md space-y-8">
         {/* Profile Header */}
         <div className="flex flex-col items-center text-center space-y-4 animate-fade-in">
-          <div className="relative w-28 h-28 rounded-full overflow-hidden border-4 border-white/80 shadow-[0_8px_30px_rgb(0,0,0,0.08)] bg-white/50 backdrop-blur-sm">
-            {/* Profile Image */}
-            <Image
-              src="/profile.png"
-              alt="Abhishek Singh"
-              width={112}
-              height={112}
-              className="object-cover object-top w-full h-full"
-              priority
-            />
-          </div>
           <div>
             <h1 className="text-2xl font-bold tracking-tight text-slate-900 drop-shadow-sm">
               Abhishek Singh
